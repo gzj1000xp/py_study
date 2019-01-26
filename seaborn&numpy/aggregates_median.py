@@ -14,6 +14,6 @@ print(assignment1)
 asn1_median = np.median(assignment1.grade)
 print(asn1_median)
 
-# ci为误差计算算法，sd是standard deviation, 标准方差
+# ci表示用何种误差计算方法: bootstrapped confidence interval（自发置信区间），一般95%；sd是standard deviation, 标准方差
 sns.barplot(data=gradebook, x="assignment_name", y="grade", ci="sd")
 plt.show()

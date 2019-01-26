@@ -38,6 +38,8 @@ def box():
 
 
 # violin（小提琴图）结合kde和box。包线为kde，中间白点为median（中位数），中间黑粗线为interquartile range（四分位距）；confidence interval（置信区间）95%。
+# A violin plot combines the ability to visualize the shape of the distribution,
+# along with showing statistical information like the median.
 def violin():
     sns.violinplot(data=df, x="label", y="value")
     plt.show()
